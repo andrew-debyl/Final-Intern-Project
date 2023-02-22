@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Inter', sans-serif; 
+}
+
+.text--purple {
+    color: #6415ff;
+}
+
+/* Nav Bar */
+#nav-bar {
+    padding: 32px;
+}
+
+.nav-bar_tLogo {
+    width: 40px;
+    margin: 0 12px 0 0;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-link--list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 28px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.nav-link--login {
+    margin: 0 28px 0 36px;
+}
+
+.nav-link--signup {
+    border: 2px solid #6415ff;
+    border-radius: 30px;
+    background-color: #6415ff;
+    color: white;
+    border-width: 10px 32px;
+}
+
+/* Header */
+
+.header {
+    padding: 96px 0;
+    display: flex;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header-title {
+    font-size: 48px;
+    color: #1a202c;
+}
+
+.header--para {
+    margin: 32px 0;
+    font-size: 18px;
+    color: #243e63;
+    line-height: 1.5;
+}
+
+.header--leftside {
+    max-width: 524px;
+}
