@@ -66,7 +66,7 @@ li {
     margin: 0 28px 0 36px;
 }
 
-.nav-link--signup {
+.nav-link--signup, .attributes--button {
     border: 2px solid #6415ff;
     border-radius: 30px;
     background-color: #6415ff;
@@ -148,7 +148,7 @@ li {
 
 /* FEATURES */
 #features {
-    padding-bottom: 96px;
+    padding-bottom: 60px;
 }
 
 .features-heading {
@@ -158,13 +158,13 @@ li {
     padding: 32px;
 }
 
-.features--title {
+.features--title, .attributes--title {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 28px;
 }
 
-.features-heading-header {
+.features-heading-header, .attributes--header {
     font-weight: 900;
     font-size: 48px;
     margin-bottom: 32px;
@@ -225,3 +225,88 @@ li {
     padding-left: 22px;
 }
 
+/* ATTRIBUTES */
+
+#attributes {
+    padding: 32px;
+}
+
+.attributes-row {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.attributes-img {
+    border: 1px solid #dbdada;
+    border-radius: 10px;
+    width: 640px;
+}
+
+.attributes-img2 {
+    width: 640px;
+}
+
+.attributes-row--leftside {
+    width: 100%;
+    max-width: 640px;
+}
+
+.attributes-row--rightside {
+    width: 100%;
+    max-width: 640px;
+}
+
+.attributes--para {
+    color: #7c8ba1;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 560px;
+    margin-bottom: 32px;
+}
+
+.attributes--header {
+    margin-top: 32px;
+    max-width: 560px;
+}
+
+.attributes--button {
+    text-decoration: none;
+}
+
+.attributes-steps--items {
+    margin: 32px 32px 32px 0;
+    display: flex;
+}
+
+.attributes-steps--header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #243e63;
+}
+
+.attributes-steps--para {
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 12px;
+    max-width: 320px;
+}
+
+.attributes-steps--num {
+    font-size: 36px;
+    color: #cbd5e0;
+    padding-right: 22px;
+    font-weight: 600;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row--title2, .row--header2, .row--steps2 {
+    margin-left: 72px;
+}
