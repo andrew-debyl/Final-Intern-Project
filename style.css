@@ -7,6 +7,10 @@
     font-family: 'Inter', sans-serif; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text--purple {
     color: #6415ff;
 }
@@ -43,6 +47,14 @@
     font-size: 24px;
     display: flex;
     align-items: center;
+    font-weight: 900;
+    color: #243e63;
+    transition: all 300ms ease;
+}
+
+.nav-logo:hover {
+    color: #6415ff;
+    cursor: pointer;
 }
 
 nav {
@@ -65,6 +77,15 @@ li {
     font-size: 15px;
     font-weight: bold;
     color: #243e63;
+    transition: all 300ms ease;
+}
+
+.nav-link:hover {
+    color: #6415ff;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 15%;
+    text-underline-offset: 6px;
 }
 
 .nav-link--login {
@@ -72,12 +93,17 @@ li {
 }
 
 .nav-link--signup, .attributes--button {
-    border: 2px solid #6415ff;
     border-radius: 30px;
     background-color: #6415ff;
     color: white;
-    border-width: 10px 32px;
+    padding: 12px 28px;
     text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.nav-link--signup:hover, .attributes--button:hover {
+    cursor: pointer;
+    background-color: #5014c7;
 }
 
 
@@ -120,19 +146,30 @@ li {
     border-radius: 30px;
     padding: 24px;
     font-size: 16px;
+    transition: all 300ms ease;
+}
+
+.header-email--textbox:hover {
+    border-color: #c9cbcf;
 }
 
 .header--getstarted {
-    border: 2px solid #6415ff;
+    border: none;
     border-radius: 30px;
     background-color: #6415ff;
     color: white;
-    border-width: 18px 32px;
+    padding: 18px 32px;
     position: absolute;
     font-size: large;
     font-weight: bold;
     left: 296px;
-    bottom: 7px;
+    bottom: 8px;
+    transition: all 300ms ease;
+}
+
+.header--getstarted:hover {
+    cursor: pointer;
+    background-color: #5014c7;
 }
 
 .header-companies {
@@ -397,15 +434,7 @@ li {
     padding: 32px 0;
 }
 
-.pricing-planmid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 32px;
-    border-top: 2px solid #f5f2f2;
-}
-
-.pricing-planbottom {
+.pricing-planmid, .pricing-planbottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,6 +486,7 @@ li {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     color: white;
     font-weight: 700;
+    transition: all 300ms ease;
 }
 
 .pricing-button--mid {
@@ -470,15 +500,16 @@ li {
     font-weight: 700;
 }
 
+.pricing-button--left:hover, .pricing-button--mid:hover, .pricing-button--right:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
 .pricing-plan--mid {
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
-.mid--border {
-    border-top-color: rgb(139, 139, 218);
-}
-
-.bottom--border {
+.mid--border, .bottom--border {
     border-top-color: rgb(139, 139, 218);
 }
 
@@ -487,6 +518,10 @@ li {
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
+}
+
+.pricing-colorbar--mid {
+    padding: 4px;
 }
 
 .pricing-colorbar--right {
@@ -522,6 +557,7 @@ li {
     background-color: #edf2f7;
     margin-top: 20px;
     border-radius: 10px;
+    transition: all 500ms ease;
 }
 
 .faqs--wrapper {
@@ -569,8 +605,64 @@ li {
     display: block;
 }
 
-.faq-question:hover, .dropbtn:hover {
-    background-color: pink;
+.faq-question:hover {
+    filter: brightness(95%);
     cursor:pointer;
 }
+
+
+/********** BOTTOM BAR **********/
+
+#bottombar {
+    padding: 0 42px;
+}
+
+.bottombar-wrapper {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    padding: 100px 24px;
+    align-items: center;
+    background-color: rgb(100 21 255);
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.bottombar--right, .bottombar--left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottombar--title {
+    font-size: 30px;
+    color: #f7fafc;
+    padding-left: 120px;
+}
+
+.bottombar--right {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 38px;
+}
+
+.bottombar--leftbtn {
+    text-decoration: none;
+    color: #f7faf7;
+    border-radius: 40px;
+    background-color: #f56565;
+    padding: 20px 38px;
+    margin-right: 32px;
+}
+
+.bottombar--rightbtn {
+    text-decoration: none;
+    color: #f7faf7;
+    border-radius: 40px;
+    padding: 20px 38px;
+    border: #b8bdc2 2px solid;
+}
+
+
+/********** FOOTER **********/
 
