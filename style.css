@@ -77,15 +77,14 @@ li {
     font-size: 15px;
     font-weight: bold;
     color: #243e63;
-    transition: all 300ms ease;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 300ms;
 }
 
 .nav-link:hover {
     color: #6415ff;
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-thickness: 15%;
-    text-underline-offset: 6px;
+    border-color: #6415ff;
 }
 
 .nav-link--login {
@@ -492,12 +491,14 @@ li {
 .pricing-button--mid {
     background: white;
     font-weight: 700;
+    transition: all 300ms ease;
 }
 
 .pricing-button--right {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     color: white;
     font-weight: 700;
+    transition: all 300ms ease;
 }
 
 .pricing-button--left:hover, .pricing-button--mid:hover, .pricing-button--right:hover {
@@ -615,11 +616,11 @@ li {
 
 #bottombar {
     padding: 0 42px;
+    margin-bottom: 76px;
 }
 
 .bottombar-wrapper {
     display: flex;
-    background-color: blue;
     width: 100%;
     padding: 100px 24px;
     align-items: center;
@@ -653,6 +654,11 @@ li {
     background-color: #f56565;
     padding: 20px 38px;
     margin-right: 32px;
+    transition: all 300ms ease;
+}
+
+.bottombar--leftbtn:hover {
+    filter: brightness(90%);
 }
 
 .bottombar--rightbtn {
@@ -661,8 +667,110 @@ li {
     border-radius: 40px;
     padding: 20px 38px;
     border: #b8bdc2 2px solid;
+    transition: all 300ms ease;
+}
+
+.bottombar--rightbtn:hover {
+    background-color: #f7faf7;
+    color: rgb(100 21 255);
+    border-color: #f7faf7;
 }
 
 
 /********** FOOTER **********/
 
+footer {
+    background-color: rgb(100 21 255);
+    padding: 42px;
+}
+
+.footer--wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-list {
+    margin: 48px 0;
+}
+
+.footer-list--title {
+    color: #f7faf7;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.footer-list--item {
+    margin-top: 12px;
+}
+
+.footer-list--words{
+    color: #f7faf7;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+}
+
+.footer-list--words:hover {
+    border-color: #f7faf7 ;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-bottom--left {
+    display: flex;
+    align-items: center;
+}
+
+.footer--img {
+    max-width: 30px;
+    border-radius: 2px;
+}
+
+.footer-bottom--title {
+    color: #f7faf7;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.footer-bottom--para {
+    font-size: 16px;
+    color: #cbd5e0;
+}
+
+.footer-icons--wrapper {
+    text-decoration: none;
+    background-color: white;
+    margin: 0 12px;
+    border-radius: 50%;
+    padding: 8px 9px;
+    transition: all 300ms ease;
+}
+
+.footer-icons--wrapper:hover {
+    filter: brightness(80%);
+}
+
+.footer--icon {
+    color: black;
+}
+
+.facebook-icon {
+    padding: 8px 11px;
+}
+
+.footer--line {
+    border-top: #b6b6b6 2px solid;
+    margin-bottom: 36px;
+}
